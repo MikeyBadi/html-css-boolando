@@ -28,7 +28,7 @@ body{
 }
 
 .zoom:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 
@@ -79,6 +79,9 @@ body{
 .discount{
   background-color: red;
 }
+.discount::after{
+  content: '\0025';
+}
 
 .sostenibile{
   background-color: green;
@@ -121,6 +124,15 @@ body{
 .price{
   text-decoration: line-through;
 }
+
+
+.price-nd{
+  text-decoration: none;
+}
+.price-nd::after{
+  content: ' \20AC';
+}
+
 
 .series, .dis-price{
   font-weight: bold;

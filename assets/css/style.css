@@ -9,6 +9,8 @@ body{
   margin: 30px auto 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
+  max-width: 1850px;
+  min-width: 1000px;
 }
 
 .row{
@@ -33,21 +35,18 @@ body{
 
 
 /* Product and tags */
-
+.product, .product img, .zoom{
+  width: 336px;
+  height: 483px;
+}
 /* product */
 .product{
   position: relative;
   display: inline-block;
   margin-right: 25px;
   margin-bottom: 100px;
-  width: 480px;
-  height: 690px;
 }
 
-.product img, .zoom{
-  width: 480px;
-  height: 690px;
-}
 
 /* hover for changing the foto */
 

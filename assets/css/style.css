@@ -7,7 +7,8 @@
 body{
   width: 90%;
   margin: 30px auto 10px;
-  background-color: coral;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
 }
 
 .row{
@@ -16,8 +17,18 @@ body{
 
 .discount, .sostenibile{
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  padding: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.zoom{
+  background-color: green;
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
 }
 
 
@@ -26,17 +37,39 @@ body{
 /* product */
 .product{
   position: relative;
-  width: 480px;
-  height: 690px;
-  background-color: grey;
   display: inline-block;
   margin-right: 25px;
   margin-bottom: 100px;
+  width: 480px;
+  height: 690px;
 }
 
-.product:hover{
-  background-color: aqua;
+.product img, .zoom{
+  width: 480px;
+  height: 690px;
 }
+
+/* hover for changing the foto */
+
+.product:hover .images-1{
+  content: url('../img/1b.webp');
+}
+.product:hover .images-2{
+  content: url('../img/2b.webp');
+}
+.product:hover .images-3{
+  content: url('../img/3b.webp');
+}
+.product:hover .images-4{
+  content: url('../img/4b.webp');
+}
+.product:hover .images-5{
+  content: url('../img/5b.webp');
+}
+.product:hover .images-6{
+  content: url('../img/6b.webp');
+}
+
 
 /* tag */
 .tags{
@@ -52,6 +85,7 @@ body{
 }
 
 .heart{
+  display: none;
   position: absolute;
   right: 0;
   top: 20px;
@@ -62,13 +96,15 @@ body{
   line-height: 100%;
 }
 
+.product:hover .heart{
+  display: block;
+}
+
 
 /* texts */
 .text{
   position: absolute;
   top: 100%;
-  font-size: 11px;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   height: 60px;
   padding-top: 10px;
